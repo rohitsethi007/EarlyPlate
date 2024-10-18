@@ -1,0 +1,213 @@
+$media: screen;
+$feature_min: min-width;
+$feature_max: max-width;
+$value_one: 576px;
+$value_two: 667px;
+$value_three: 767px;
+$value_four: 768px;
+$value_five: 991px;
+$value_six: 992px;
+$value_seven: 1199px;
+
+$main-color: #c7a254;
+$black-color: #000000;
+$white-color: #ffffff;
+
+@media only #{$media} and ($feature_max : $value_three) {
+
+    .navbar-area {
+        padding-top: 20px;
+    }
+    
+    .coming-soon-content {
+        text-align: center;
+
+        h5 {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        h1 {
+            line-height: 55px;
+            font-size: 50px;
+        }
+        p {
+            font-size: 15px;
+            margin-top: 20px;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+        .newsletter-form {
+            margin-top: 35px;
+
+            #validator-newsletter {
+                bottom: -32px;
+                font-size: 13px;
+            }
+        }
+    }
+    .count-down-timer {
+        margin-top: 50px;
+
+        #timer {
+            div {
+                font-size: 45px;
+                margin: {
+                    left: 10px;
+                    right: 10px;
+                }
+                span {
+                    margin-top: -5px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .sidebar-modal {
+        .sidebar-modal-inner {
+            width: 100%;
+            padding: 30px;
+
+            .close-btn {
+                right: 20px;
+                top: 14px;
+                font-size: 20px;
+            }
+        }
+        .about-area {
+            margin-bottom: 30px;
+
+            .title {
+                h2 {
+                    font-size: 20px;
+                }
+                p {
+                    font-size: 14px;
+                    margin-top: 10px;
+                    line-height: 1.8;
+                }
+            }
+        }
+        .contact-area {
+            .title {
+                margin-bottom: 20px;
+
+                h2 {
+                    font-size: 20px;
+                }
+            }
+            .contact-form {
+                max-width: 100%;
+            }
+            .contact-info {
+                margin-top: 35px;
+
+                .contact-info-content {
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1.4;
+                    }
+                    h2 {
+                        font-size: 22px;
+
+                        span {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only #{$media} and ($feature_min : $value_two) and ($feature_max : $value_three) {
+
+    .coming-soon-area {
+        height: 100%;
+        padding: {
+            top: 200px;
+            bottom: 130px;
+        }
+    }
+    .coming-soon-content {
+        margin-top: 0;
+    }
+
+}
+
+@media only #{$media} and ($feature_min : $value_one) and ($feature_max : $value_three) {
+
+    .coming-soon-content {
+        h5 {
+            font-size: 17px;
+            margin-bottom: 12px;
+        }
+        h1 {
+            font-size: 60px;
+        }
+        p {
+            line-height: 1.8;
+            font-size: 16px;
+            margin-top: 25px;
+        }
+    }
+    .count-down-timer {
+        #timer {
+            div {
+                font-size: 55px;
+                margin: {
+                    left: 20px;
+                    right: 20px;
+                }
+                span {
+                    margin-top: -8px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+}
+
+@media only #{$media} and ($feature_min : $value_four) and ($feature_max : $value_five) {
+
+    .sidebar-modal {
+        .sidebar-modal-inner {
+            width: 85%;
+            padding: {
+                top: 40px;
+                bottom: 40px;
+                left: 40px;
+                right: 40px;
+            }
+        }
+        .about-area {
+            .title {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+        .contact-area {
+            .title {
+                h2 {
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only #{$media} and ($feature_min : $value_six) and ($feature_max : $value_seven) {
+
+    .sidebar-modal {
+        .sidebar-modal-inner {
+            width: 60%;
+        }
+    }
+
+}
