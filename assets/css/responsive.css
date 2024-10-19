@@ -1,107 +1,141 @@
 @media only screen and (max-width: 767px) {
   .navbar-area {
     padding-top: 20px;
+  }
+  .coming-soon-content {
     text-align: center;
+  }
+  .coming-soon-content h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .coming-soon-content h1 {
+    line-height: 55px;
+    font-size: 50px;
+  }
+  .coming-soon-content p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .coming-soon-content .newsletter-form {
+    margin-top: 35px;
+  }
+  .coming-soon-content .newsletter-form #validator-newsletter {
+    bottom: -32px;
+    font-size: 13px;
   }
   .count-down-timer {
-    text-align: center;
-    margin-top: 0;
+    margin-top: 50px;
   }
   .count-down-timer #timer div {
-    font-size: 40px;
+    font-size: 45px;
     margin-left: 10px;
     margin-right: 10px;
   }
   .count-down-timer #timer div span {
-    text-transform: capitalize;
-    margin-top: -4px;
+    margin-top: -5px;
+    font-size: 15px;
   }
-  .main-banner-content {
-    text-align: center;
-  }
-  .main-banner-content h1 {
-    line-height: 50px;
-    font-size: 50px;
-  }
-  .main-banner-content p {
-    max-width: 100%;
-    font-size: 16x;
-    margin-top: 20px;
-  }
-  .main-banner-content .newsletter-form {
-    margin-top: 30px;
-  }
-  .main-banner-content .newsletter-form .input-newsletter {
+  .sidebar-modal .sidebar-modal-inner {
     width: 100%;
+    padding: 30px;
   }
-  .main-banner-content .newsletter-form button {
-    position: relative;
-    right: 0;
-    height: auto;
-    padding: 15px 30px;
-    line-height: initial;
+  .sidebar-modal .sidebar-modal-inner .close-btn {
+    right: 20px;
+    top: 14px;
+    font-size: 20px;
+  }
+  .sidebar-modal .about-area {
+    margin-bottom: 30px;
+  }
+  .sidebar-modal .about-area .title h2 {
+    font-size: 20px;
+  }
+  .sidebar-modal .about-area .title p {
     font-size: 14px;
-    margin-top: 15px;
+    margin-top: 10px;
+    line-height: 1.8;
+  }
+  .sidebar-modal .contact-area .title {
+    margin-bottom: 20px;
+  }
+  .sidebar-modal .contact-area .title h2 {
+    font-size: 20px;
+  }
+  .sidebar-modal .contact-area .contact-form {
+    max-width: 100%;
+  }
+  .sidebar-modal .contact-area .contact-info {
+    margin-top: 35px;
+  }
+  .sidebar-modal .contact-area .contact-info .contact-info-content h3 {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .sidebar-modal .contact-area .contact-info .contact-info-content h2 {
+    font-size: 22px;
+  }
+  .sidebar-modal .contact-area .contact-info .contact-info-content h2 span {
+    font-size: 13px;
   }
 }
 
 @media only screen and (min-width: 667px) and (max-width: 767px) {
-  .main-banner {
+  .coming-soon-area {
     height: 100%;
-    padding-top: 155px;
-    padding-bottom: 110px;
+    padding-top: 200px;
+    padding-bottom: 130px;
   }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 767px) {
-  .count-down-timer #timer div {
-    font-size: 45px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .main-banner-content {
-    text-align: center;
-  }
-  .main-banner-content h1 {
-    line-height: 53px;
-    font-size: 62px;
-  }
-  .main-banner-content p {
-    font-size: 14px;
-  }
-  .main-banner-content .newsletter-form .input-newsletter {
-    width: 100%;
-  }
-  .main-banner-content .newsletter-form button {
-    position: absolute;
-    right: 0;
-    height: 55px;
-    padding: 0 30px;
-    line-height: 55px;
-    font-size: 14px;
+  .coming-soon-content {
     margin-top: 0;
   }
 }
 
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+  .coming-soon-content h5 {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+  .coming-soon-content h1 {
+    font-size: 60px;
+  }
+  .coming-soon-content p {
+    line-height: 1.8;
+    font-size: 16px;
+    margin-top: 25px;
+  }
+  .count-down-timer #timer div {
+    font-size: 55px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .count-down-timer #timer div span {
+    margin-top: -8px;
+    font-size: 16px;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .main-banner-content .newsletter-form {
-    margin-top: 30px;
-    max-width: 540px;
+  .sidebar-modal .sidebar-modal-inner {
+    width: 85%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .sidebar-modal .about-area .title h2 {
+    font-size: 24px;
+  }
+  .sidebar-modal .contact-area .title h2 {
+    font-size: 24px;
   }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .main-banner .col-lg-6 {
-    -ms-flex: 0 0 55%;
-    -webkit-box-flex: 0;
-            flex: 0 0 55%;
-    max-width: 55%;
-  }
-  .main-banner-content .newsletter-form .input-newsletter {
-    width: 100%;
-  }
-  .main-banner-content .newsletter-form button {
-    right: 0;
+  .sidebar-modal .sidebar-modal-inner {
+    width: 60%;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
