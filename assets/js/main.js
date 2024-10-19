@@ -1,21 +1,6 @@
 (function($){
 	"use strict";
 
-	// First Word Color JS
-	$(".main-banner-content h5").html(function(){
-		var text= $(this).text().trim().split(" ");
-		var first = text.shift();
-		return (text.length > 0 ? "<span>"+ first + "</span> " : first) + text.join(" ");
-	});
-	
-	// Sidebar Modal
-	$(".navbar-menu .burger-menu").on('click',  function() {
-		$('.sidebar-modal').toggleClass('active');
-	});
-	$(".sidebar-modal-close-btn").on('click',  function() {
-		$('.sidebar-modal').removeClass('active');
-	});
-
 	// Count Time 
 	function makeTimer() {
 		var endTime = new Date("September 30, 2025 17:00:00 PDT");
@@ -96,9 +81,10 @@
           wow.init();
         }
 	});
-	
-	// Preloader Area
+
+	// Preloader JS
 	$(window).on('load', function() {
-		$('.preloader').addClass('preloader-deactivate');
+		$('.preloader').fadeOut();
 	});
+    
 }(jQuery));
