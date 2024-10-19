@@ -7,13 +7,17 @@
 		var first = text.shift();
 		return (text.length > 0 ? "<span>"+ first + "</span> " : first) + text.join(" ");
 	});
-	
+	 
 	// Sidebar Modal
 	$(".navbar-menu .burger-menu").on('click',  function() {
 		$('.sidebar-modal').toggleClass('active');
 	});
 	$(".sidebar-modal-close-btn").on('click',  function() {
 		$('.sidebar-modal').removeClass('active');
+	});
+	$("#restaurantsButton").on('click', function() {
+		$(".navbar-menu .burger-menu").trigger('click'); // Simulate the click
+		$('.sidebar-modal').toggleClass('active'); // Toggle sidebar active state
 	});
 
 	// Count Time 
